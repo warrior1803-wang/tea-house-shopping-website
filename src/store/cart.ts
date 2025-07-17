@@ -13,9 +13,9 @@ type CartState = {
 
 export const useCartStore = create<CartState>((set, get) => ({
   items: [],
-  addToCart: (product, quantity) => {
-    set((state) => {
-      const existing = state.items.find((item) => item.product.slug === product.slug);
+  addToCart: (product: { slug: string; }, quantity: number) => {
+    set((state: { items: CartItem[]; }) => {
+      const existing = state.items.find((item: { product: { slug: string; }; }) => item.product.slug === product.slug);
       if (existing) {
         return {
           items: state.items.map((item) =>
@@ -28,5 +28,5 @@ export const useCartStore = create<CartState>((set, get) => ({
       return { items: [...state.items, { product, quantity }] };
     });
   },
-  getTotalCount: () => get().items.reduce((sum, item) => sum + item.quantity, 0),
+  getTotalCount: () => get().items.reduce((sum: number, item: { quantity: number; }) => sum + item.quantity, 0),
 })); 

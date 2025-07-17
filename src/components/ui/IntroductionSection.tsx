@@ -1,11 +1,10 @@
 import Image from "next/image";
-
 export default function IntroductionSection() {
   return (
     <section className="w-full flex flex-col md:flex-row">
       <div className="border-t border-[#E6E9D8] w-full absolute left-0 top-0" />
       {/* Left: Heading + Image */}
-      <div className="flex-1 bg-white flex flex-col justify-center items-center py-16 px-8">
+      <div className="flex-1 bg-[#F4F8E8] flex flex-col justify-center items-center py-16 px-8">
         <h2 className="text-[#384734] text-5xl md:text-6xl font-light mb-10 text-left w-full max-w-xl">
           The Best of Japan,
           <br />

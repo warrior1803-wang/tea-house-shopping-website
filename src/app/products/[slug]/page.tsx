@@ -23,6 +23,7 @@ export default function ProductPage({ params }: { params: Promise<{ slug: string
     dispatch(addToCart({ product, quantity }));
     setAdded(true);
     setTimeout(() => setAdded(false), 1200);
+    setQuantity(1);
   };
 
   return (

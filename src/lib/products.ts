@@ -27,8 +27,10 @@ export const products: Product[] = [
     price: 2.4,
     rating: 5.0,
     currency: "EUR",
-    description: "A real lemon slice inside. Refreshing lemonade with vitamin C. Vertically opening full-tap to fully enjoy fresh flavor and taste.",
-    ingredients: "Purified Water, Erythritol (sweetener), Lemon Slice 2.85% (lemon content 100%, from Korea), Lemon Concentrate 0.54%, Vitamin C, Citric Acid, Sodium Citrate, Natural Flavor, Sucralose (sweetener), Stevia Extract, Beta-Carotene (color), Ascorbyl Palmitate (antioxidant)",
+    description:
+      "A real lemon slice inside. Refreshing lemonade with vitamin C. Vertically opening full-tap to fully enjoy fresh flavor and taste.",
+    ingredients:
+      "Purified Water, Erythritol (sweetener), Lemon Slice 2.85% (lemon content 100%, from Korea), Lemon Concentrate 0.54%, Vitamin C, Citric Acid, Sodium Citrate, Natural Flavor, Sucralose (sweetener), Stevia Extract, Beta-Carotene (color), Ascorbyl Palmitate (antioxidant)",
   },
   {
     name: "Kirin Namacha",
@@ -44,4 +46,4 @@ export const products: Product[] = [
 
 export function getProductBySlug(slug: string): Product | undefined {
   return products.find((p) => p.slug === slug);
-} 
+}

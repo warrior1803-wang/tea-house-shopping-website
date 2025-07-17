@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import Typerwriter from "typewriter-effect";
 export default function HeroSection() {
   return (
     <section className="w-full h-screen flex font-sans">
@@ -16,7 +16,7 @@ export default function HeroSection() {
             <br />
             Japan to
             <br />
-            Rotterdam
+            <Typerwriter options={{ strings: ['Rotterdam'], autoStart: true, loop: true }} />
           </h1>
         </div>
         {/* Bottom: CTA Button */}
