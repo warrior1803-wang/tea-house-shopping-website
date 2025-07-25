@@ -24,6 +24,7 @@ export default function RootLayout({
       >
         <Provider store={store}>
           <Header />
+
           <main className="min-h-screen">{children}</main>
           <Footer />
         </Provider>
